@@ -16,4 +16,8 @@ CURSO da ALURA: _Docker: criando e gerenciando containers_
 
 Neste curso instalamos o Docker ![Docker](https://github.com/user-attachments/assets/d2495010-3881-46a1-8e1e-6752f18c82e5)
 
-O repositorio dos Containers esta em [https://hub.docker.com/repositories/elbergaliza](https://hub.docker.com/repositories/elbergaliza)
+O repositorio dos Containers criados esta em [https://hub.docker.com/repositories/elbergaliza](https://hub.docker.com/repositories/elbergaliza)
+
+Fora utilizados os Containers de teste:
+* [https://hub.docker.com/_/hello-world](https://hub.docker.com/_/hello-world)
+* [https://hub.docker.com/r/dockersamples/static-site](https://hub.docker.com/r/dockersamples/static-site)
