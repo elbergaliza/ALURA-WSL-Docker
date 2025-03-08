@@ -1,0 +1,28 @@
+#A definição da versão do yaml é obsoleta
+#version: "3.9"
+
+#Serviços são os containers que serão criados a partir do arquivo docker-compose.yml.
+services:
+  #O nome do serviço. Esse nome será utilizado para referenciar o serviço em outros
+  #pontos do arquivo.
+  mongodb:
+    #A imagem que será utilizada para criar o container.
+    image: mongo:4.4.6
+    #O nome do container.
+    container_name: meu-mongo
+    #A rede que o container fará parte.
+    networks:
+      - compose-bridge
+  
+  alurabooks:
+    image: aluradocker/alura-books:1.0
+    container_name: alurabooks
+    networks:
+      - compose-bridge
+    #A porta que será exposta no host.
+    ports:
+      - 3000:3000
+
+networks:
+  compose-bridge:
+    driver: bridge
